@@ -1,0 +1,165 @@
+<h1>Test Braintree</h1>
+
+<h1>Products main</h1>
+
+<section>
+      <div class="product">
+        <img
+        width="250px"
+          src="https://api.tissini.app/img/products/concord/recamaras/ProvenzaCU_0.jpg"
+          alt="Cobertor UltraSuave Provenza"
+        />
+        <div class="description">
+          <h3>Cobertor UltraSuave Provenza</h3>
+          <h5>$2.00</h5>
+        </div>
+      </div>
+      <div id="dropin-container"></div>
+  <button id="submit-button">Request payment method</button>
+  <!--<script>
+    var button = document.querySelector('#submit-button');
+
+    braintree.dropin.create({
+      authorization: 
+      'eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiJleUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpGVXpJMU5pSXNJbXRwWkNJNklqSXdNVGd3TkRJMk1UWXRjMkZ1WkdKdmVDSXNJbWx6Y3lJNkltaDBkSEJ6T2k4dllYQnBMbk5oYm1SaWIzZ3VZbkpoYVc1MGNtVmxaMkYwWlhkaGVTNWpiMjBpZlEuZXlKbGVIQWlPakUyTURFM05qRXpNRGdzSW1wMGFTSTZJbUV6WlRVNVl6VXhMVFUyTXpjdE5EQTNaUzFpWm1VekxXSTBNVEZqT0RGbU1UaGlPQ0lzSW5OMVlpSTZJbWRuWW5CNWVUWnJZM1JvYTJod2NUVWlMQ0pwYzNNaU9pSm9kSFJ3Y3pvdkwyRndhUzV6WVc1a1ltOTRMbUp5WVdsdWRISmxaV2RoZEdWM1lYa3VZMjl0SWl3aWJXVnlZMmhoYm5RaU9uc2ljSFZpYkdsalgybGtJam9pWjJkaWNIbDVObXRqZEdocmFIQnhOU0lzSW5abGNtbG1lVjlqWVhKa1gySjVYMlJsWm1GMWJIUWlPbVpoYkhObGZTd2ljbWxuYUhSeklqcGJJbTFoYm1GblpWOTJZWFZzZENKZExDSnpZMjl3WlNJNld5SkNjbUZwYm5SeVpXVTZWbUYxYkhRaVhTd2liM0IwYVc5dWN5STZlMzE5LkRobXFIZHMxNVBpekZxVjZEdnN4VUdpOVBwVXJueVd3T3d2Z3otLVA2VEJtaGhTWTF6RF9vd3QyU18tX3EwWnFrV2tHNkdzU3lqZXFVYXFEY19GSzhnIiwiY29uZmlnVXJsIjoiaHR0cHM6Ly9hcGkuc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbTo0NDMvbWVyY2hhbnRzL2dnYnB5eTZrY3Roa2hwcTUvY2xpZW50X2FwaS92MS9jb25maWd1cmF0aW9uIiwiZ3JhcGhRTCI6eyJ1cmwiOiJodHRwczovL3BheW1lbnRzLnNhbmRib3guYnJhaW50cmVlLWFwaS5jb20vZ3JhcGhxbCIsImRhdGUiOiIyMDE4LTA1LTA4IiwiZmVhdHVyZXMiOlsidG9rZW5pemVfY3JlZGl0X2NhcmRzIl19LCJjbGllbnRBcGlVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvZ2dicHl5NmtjdGhraHBxNS9jbGllbnRfYXBpIiwiZW52aXJvbm1lbnQiOiJzYW5kYm94IiwibWVyY2hhbnRJZCI6ImdnYnB5eTZrY3Roa2hwcTUiLCJhc3NldHNVcmwiOiJodHRwczovL2Fzc2V0cy5icmFpbnRyZWVnYXRld2F5LmNvbSIsImF1dGhVcmwiOiJodHRwczovL2F1dGgudmVubW8uc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbSIsInZlbm1vIjoib2ZmIiwiY2hhbGxlbmdlcyI6W10sInRocmVlRFNlY3VyZUVuYWJsZWQiOnRydWUsImFuYWx5dGljcyI6eyJ1cmwiOiJodHRwczovL29yaWdpbi1hbmFseXRpY3Mtc2FuZC5zYW5kYm94LmJyYWludHJlZS1hcGkuY29tL2dnYnB5eTZrY3Roa2hwcTUifSwicGF5cGFsRW5hYmxlZCI6dHJ1ZSwicGF5cGFsIjp7ImJpbGxpbmdBZ3JlZW1lbnRzRW5hYmxlZCI6dHJ1ZSwiZW52aXJvbm1lbnROb05ldHdvcmsiOnRydWUsInVudmV0dGVkTWVyY2hhbnQiOmZhbHNlLCJhbGxvd0h0dHAiOnRydWUsImRpc3BsYXlOYW1lIjoiVElTU0lOSSIsImNsaWVudElkIjpudWxsLCJwcml2YWN5VXJsIjoiaHR0cDovL2V4YW1wbGUuY29tL3BwIiwidXNlckFncmVlbWVudFVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbS90b3MiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20iLCJhc3NldHNVcmwiOiJodHRwczovL2NoZWNrb3V0LnBheXBhbC5jb20iLCJkaXJlY3RCYXNlVXJsIjpudWxsLCJlbnZpcm9ubWVudCI6Im9mZmxpbmUiLCJicmFpbnRyZWVDbGllbnRJZCI6Im1hc3RlcmNsaWVudDMiLCJtZXJjaGFudEFjY291bnRJZCI6InRpc3NpbmkiLCJjdXJyZW5jeUlzb0NvZGUiOiJVU0QifX0=',
+      container: '#dropin-container'
+    }, function (createErr, instance) {
+      button.addEventListener('click', function () {
+        instance.requestPaymentMethod(function (err, payload) {
+            console.log(payload);
+          // Submit payload.nonce to your server
+        });
+      });
+    });
+
+    var paymentsClient = new google.payments.api.PaymentsClient({
+  environment: 'TEST' // Or 'PRODUCTION'
+});
+
+//Google Pay
+// Make sure to have https://pay.google.com/gp/p/js/pay.js loaded on your page
+
+// You will need a button element on your page styled according to Google's brand guidelines
+// https://developers.google.com/pay/api/web/guides/brand-guidelines
+var button = document.querySelector('#google-pay-button');
+var paymentsClient = new google.payments.api.PaymentsClient({
+  environment: 'TEST' // Or 'PRODUCTION'
+});
+
+braintree.client.create({
+  authorization: CLIENT_AUTHORIZATION
+}, function (clientErr, clientInstance) {
+  braintree.googlePayment.create({
+    client: clientInstance,
+    googlePayVersion: 2,
+    googleMerchantId: 'merchant-id-from-google' // Optional in sandbox; if set in sandbox, this value must be a valid production Google Merchant ID
+  }, function (googlePaymentErr, googlePaymentInstance) {
+    paymentsClient.isReadyToPay({
+      // see https://developers.google.com/pay/api/web/reference/object#IsReadyToPayRequest
+      apiVersion: 2,
+      apiVersionMinor: 0,
+      allowedPaymentMethods: googlePaymentInstance.createPaymentDataRequest().allowedPaymentMethods,
+      existingPaymentMethodRequired: true // Optional
+    }).then(function(response) {
+      if (response.result) {
+        button.addEventListener('click', function (event) {
+          event.preventDefault();
+
+          var paymentDataRequest = googlePaymentInstance.createPaymentDataRequest({
+            transactionInfo: {
+              currencyCode: 'USD',
+              totalPriceStatus: 'FINAL',
+              totalPrice: '100.00' // Your amount
+            }
+          });
+
+          // We recommend collecting billing address information, at minimum
+          // billing postal code, and passing that billing postal code with all
+          // Google Pay card transactions as a best practice.
+          // See all available options at https://developers.google.com/pay/api/web/reference/object
+          var cardPaymentMethod = paymentDataRequest.allowedPaymentMethods[0];
+          cardPaymentMethod.parameters.billingAddressRequired = true;
+          cardPaymentMethod.parameters.billingAddressParameters = {
+            format: 'FULL',
+            phoneNumberRequired: true
+          };
+
+          paymentsClient.loadPaymentData(paymentDataRequest).then(function(paymentData) {
+            googlePaymentInstance.parseResponse(paymentData, function (err, result) {
+              if (err) {
+                // Handle parsing error
+              }
+
+              // Send result.nonce to your server
+              // result.type may be either "AndroidPayCard" or "PayPalAccount", and
+              // paymentData will contain the billingAddress for card payments
+            });
+          }).catch(function (err) {
+            // Handle errors
+          });
+        });
+      }
+    }).catch(function (err) {
+      // Handle errors
+    });
+  });
+
+  // Set up other Braintree components
+});
+  </script>-->
+  <script>
+    var button = document.querySelector('#submit-button');
+
+    braintree.dropin.create({
+      authorization: 
+      'eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiJleUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpGVXpJMU5pSXNJbXRwWkNJNklqSXdNVGd3TkRJMk1UWXRjMkZ1WkdKdmVDSXNJbWx6Y3lJNkltaDBkSEJ6T2k4dllYQnBMbk5oYm1SaWIzZ3VZbkpoYVc1MGNtVmxaMkYwWlhkaGVTNWpiMjBpZlEuZXlKbGVIQWlPakUyTURFM05qRXpNRGdzSW1wMGFTSTZJbUV6WlRVNVl6VXhMVFUyTXpjdE5EQTNaUzFpWm1VekxXSTBNVEZqT0RGbU1UaGlPQ0lzSW5OMVlpSTZJbWRuWW5CNWVUWnJZM1JvYTJod2NUVWlMQ0pwYzNNaU9pSm9kSFJ3Y3pvdkwyRndhUzV6WVc1a1ltOTRMbUp5WVdsdWRISmxaV2RoZEdWM1lYa3VZMjl0SWl3aWJXVnlZMmhoYm5RaU9uc2ljSFZpYkdsalgybGtJam9pWjJkaWNIbDVObXRqZEdocmFIQnhOU0lzSW5abGNtbG1lVjlqWVhKa1gySjVYMlJsWm1GMWJIUWlPbVpoYkhObGZTd2ljbWxuYUhSeklqcGJJbTFoYm1GblpWOTJZWFZzZENKZExDSnpZMjl3WlNJNld5SkNjbUZwYm5SeVpXVTZWbUYxYkhRaVhTd2liM0IwYVc5dWN5STZlMzE5LkRobXFIZHMxNVBpekZxVjZEdnN4VUdpOVBwVXJueVd3T3d2Z3otLVA2VEJtaGhTWTF6RF9vd3QyU18tX3EwWnFrV2tHNkdzU3lqZXFVYXFEY19GSzhnIiwiY29uZmlnVXJsIjoiaHR0cHM6Ly9hcGkuc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbTo0NDMvbWVyY2hhbnRzL2dnYnB5eTZrY3Roa2hwcTUvY2xpZW50X2FwaS92MS9jb25maWd1cmF0aW9uIiwiZ3JhcGhRTCI6eyJ1cmwiOiJodHRwczovL3BheW1lbnRzLnNhbmRib3guYnJhaW50cmVlLWFwaS5jb20vZ3JhcGhxbCIsImRhdGUiOiIyMDE4LTA1LTA4IiwiZmVhdHVyZXMiOlsidG9rZW5pemVfY3JlZGl0X2NhcmRzIl19LCJjbGllbnRBcGlVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvZ2dicHl5NmtjdGhraHBxNS9jbGllbnRfYXBpIiwiZW52aXJvbm1lbnQiOiJzYW5kYm94IiwibWVyY2hhbnRJZCI6ImdnYnB5eTZrY3Roa2hwcTUiLCJhc3NldHNVcmwiOiJodHRwczovL2Fzc2V0cy5icmFpbnRyZWVnYXRld2F5LmNvbSIsImF1dGhVcmwiOiJodHRwczovL2F1dGgudmVubW8uc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbSIsInZlbm1vIjoib2ZmIiwiY2hhbGxlbmdlcyI6W10sInRocmVlRFNlY3VyZUVuYWJsZWQiOnRydWUsImFuYWx5dGljcyI6eyJ1cmwiOiJodHRwczovL29yaWdpbi1hbmFseXRpY3Mtc2FuZC5zYW5kYm94LmJyYWludHJlZS1hcGkuY29tL2dnYnB5eTZrY3Roa2hwcTUifSwicGF5cGFsRW5hYmxlZCI6dHJ1ZSwicGF5cGFsIjp7ImJpbGxpbmdBZ3JlZW1lbnRzRW5hYmxlZCI6dHJ1ZSwiZW52aXJvbm1lbnROb05ldHdvcmsiOnRydWUsInVudmV0dGVkTWVyY2hhbnQiOmZhbHNlLCJhbGxvd0h0dHAiOnRydWUsImRpc3BsYXlOYW1lIjoiVElTU0lOSSIsImNsaWVudElkIjpudWxsLCJwcml2YWN5VXJsIjoiaHR0cDovL2V4YW1wbGUuY29tL3BwIiwidXNlckFncmVlbWVudFVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbS90b3MiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20iLCJhc3NldHNVcmwiOiJodHRwczovL2NoZWNrb3V0LnBheXBhbC5jb20iLCJkaXJlY3RCYXNlVXJsIjpudWxsLCJlbnZpcm9ubWVudCI6Im9mZmxpbmUiLCJicmFpbnRyZWVDbGllbnRJZCI6Im1hc3RlcmNsaWVudDMiLCJtZXJjaGFudEFjY291bnRJZCI6InRpc3NpbmkiLCJjdXJyZW5jeUlzb0NvZGUiOiJVU0QifX0=',
+      container: '#dropin-container',
+      paypal: {
+            flow: 'checkout',
+            amount: '10.00',
+            currency: 'USD'
+        },
+        venmo: {
+            allowNewBrowserTab: false
+        },
+        googlePay: {
+    googlePayVersion: 2,
+    merchantId: 'merchant-id-from-google',
+    transactionInfo: {
+      totalPriceStatus: 'FINAL',
+      totalPrice: '123.45',
+      currencyCode: 'USD'
+    },
+    allowedPaymentMethods: [{
+      type: 'CARD',
+      parameters: {
+        // We recommend collecting and passing billing address information with all Google Pay transactions as a best practice.
+        billingAddressRequired: true,
+        billingAddressParameters: {
+          format: 'FULL'
+        }
+      }
+    }]
+  },
+  applePay: {
+    displayName: 'My Store',
+    paymentRequest: {
+      total: {
+        label: 'My Store',
+        amount: '19.99'
+      },
+      // We recommend collecting billing address information, at minimum
+      // billing postal code, and passing that billing postal code with all
+      // Apple Pay transactions as a best practice.
+      requiredBillingContactFields: ["postalAddress"]
+    }
+  }
+    }, function (createErr, instance) {
+      button.addEventListener('click', function () {
+        instance.requestPaymentMethod(function (requestPaymentMethodErr, payload) {
+          // Submit payload.nonce to your server
+        });
+      });
+    });
+  </script>
+    </section>
